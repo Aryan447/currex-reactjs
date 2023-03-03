@@ -1,0 +1,208 @@
+.formHomepage {
+    position: absolute;
+    width: 435px;
+    height: 378px;
+    top: 22vh;
+    left: 35%;
+    background: rgba(49, 49, 49, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    border-radius: 40px;
+}
+
+.amount {
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    left: 2vw;
+    top: 6vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: black;
+    font-family: 'Inter';
+}
+
+.fromCurrency {
+    position: absolute;
+    width: 14vw;
+    height: 10vh;
+    left: 02vw;
+    top: 20vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: black;
+    font-family: 'Inter';
+}
+
+.toCurrency {
+    position: absolute;
+    width: 14vw;
+    height: 10vh;
+    left: 18vw;
+    top: 20vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: black;
+    font-family: 'Inter';
+}
+
+.swapBtn {
+    position: absolute;
+    width: 14vw;
+    height: 10vh;
+    left: 02vw;
+    top: 35vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: black;
+    font-family: 'Inter';
+}
+
+.convertBtn {
+    position: absolute;
+    width: 14vw;
+    height: 10vh;
+    left: 18vw;
+    top: 35vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: black;
+    font-family: 'Inter';
+}
+
+.ExchangeResult {
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    left: 2vw;
+    top: 50vh;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 40px;
+    border: none;
+    text-align: left;
+    color: black;
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2vw;
+}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 768px) {
+    .formHomepage {
+        position: absolute;
+        width: 90vw;
+        height: 52vh;
+        top: 22vh;
+        left: 5vw;
+        background: rgba(49, 49, 49, 0.5);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(6px);
+        border-radius: 40px;
+    }
+
+    .amount {
+        position: absolute;
+        width: 80vw;
+        height: 8vh;
+        left: 5vw;
+        top: 4vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        color: black;
+        font-family: 'Inter';
+    }
+
+    .fromCurrency {
+        position: absolute;
+        width: 38vw;
+        height: 8vh;
+        left: 5vw;
+        top: 16vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        color: black;
+        font-family: 'Inter';
+    }
+
+    .toCurrency {
+        position: absolute;
+        width: 38vw;
+        height: 8vh;
+        left: 47vw;
+        top: 16vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        color: black;
+        font-family: 'Inter';
+    }
+    .swapBtn {
+        position: absolute;
+        width: 38vw;
+        height: 8vh;
+        left: 5vw;
+        top: 28vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        color: black;
+        font-family: 'Inter';
+    }
+    .convertBtn {
+        position: absolute;
+        width: 38vw;
+        height: 8vh;
+        left: 47vw;
+        top: 28vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        color: black;
+        font-family: 'Inter';
+    }
+    
+    .ExchangeResult {
+        position: absolute;
+        width: 80vw;
+        height: 8vh;
+        left: 5vw;
+        top: 40vh;
+        background: rgba(217, 217, 217, 0.2);
+        border-radius: 40px;
+        border: none;
+        text-align: left;
+        color: black;
+        font-family: 'Inter';
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 2vw;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1536px) {}
