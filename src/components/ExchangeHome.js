@@ -88,7 +88,7 @@ export default function ExchangeHome() {
                     <button className="convertBtn" onClick={handleConvert}>Convert</button>
                     <br />
                     <button className="swapBtn" onClick={handleSwapCurrencies}>Swap</button>
-                    <p className='ExchangeResult' >Exchange rate: {exchangeRate}</p>
+                    <p className='ExchangeResult' >Exchange rate: {exchangeRate*amount}</p>
                 </div>
             </div>
         </>
