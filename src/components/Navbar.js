@@ -10,8 +10,8 @@ export default function Navbar() {
                 <img src={currExLogo} className='navbarLogo w-36' />
                 </a>
                 <div className='navbarText flex mt-1'>
-                    <a className='aboutText text-2xl font-inter font-bold ml-4 hover:text-grey' href='#'>About</a>
-                    <a className='contactText text-2xl font-inter font-bold ml-4 hover:text-grey' href='#'>Contact</a>
+                    <a className='aboutText text-2xl font-inter font-bold ml-4 hover:text-grey' href='/about'>About</a>
+                    <a className='contactText text-2xl font-inter font-bold ml-4 hover:text-grey' href='/contact'>Contact</a>
                 </div>
             </div>
         </>
