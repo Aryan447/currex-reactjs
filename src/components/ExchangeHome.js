@@ -20,15 +20,28 @@ export default function ExchangeHome() {
     };
 
     const handleConvert = async () => {
-        const response = await fetch(`https://currency-exchange.p.rapidapi.com/exchange?from=${fromCurrency}&to=${toCurrency}&q=${amount}`, {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "currency-exchange.p.rapidapi.com",
-                "x-rapidapi-key": "2aa905393emsh109f3578592ff85p1cfa38jsn6ec5fd7cadcf" // Replace with your API key
-            }
-        });
-        const data = await response.json();
-        setExchangeRate(data);
+        let rate = null;
+        if (fromCurrency === 'CMD' && toCurrency === 'CMD') {
+            rate = 1;
+        } else if (fromCurrency === 'CMD') {
+            rate = 1 * 69;
+        } else if (toCurrency === 'CMD') {
+            rate = 69;
+        } else {
+            const response = await fetch(
+                `https://currency-exchange.p.rapidapi.com/exchange?from=${fromCurrency}&to=${toCurrency}&q=${amount}`,
+                {
+                    method: 'GET',
+                    headers: {
+                        'x-rapidapi-host': 'currency-exchange.p.rapidapi.com',
+                        'x-rapidapi-key': '2aa905393emsh109f3578592ff85p1cfa38jsn6ec5fd7cadcf', // Replace with your API key
+                    },
+                }
+            );
+            const data = await response.json();
+            rate = data;
+        }
+        setExchangeRate(rate);
     };
 
     const handleSwapCurrencies = () => {
@@ -62,7 +75,7 @@ export default function ExchangeHome() {
                     <option value="TWD">Taiwan dollar (TWD)</option>
                     <option value="THB">Thai Baht (THB)</option>
                     <option value="VND">Vietnamese dong (VND)</option>
-                    <option value="VND">Cumul Dollar (CMD)</option>
+                    <option value="CMD">Cumul Dollar (CMD)</option>
                 </select>
 
                 <select className="toCurrency" value={toCurrency} onChange={handleToCurrencyChange}>
@@ -89,7 +102,7 @@ export default function ExchangeHome() {
                     <button className="convertBtn" onClick={handleConvert}>Convert</button>
                     <br />
                     <button className="swapBtn" onClick={handleSwapCurrencies}>Swap</button>
-                    <p className='ExchangeResult' >Exchange rate: {exchangeRate*amount}</p>
+                    <p className='ExchangeResult' >Exchange rate: {exchangeRate * amount}</p>
                 </div>
             </div>
         </>
