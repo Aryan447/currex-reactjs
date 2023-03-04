@@ -75,7 +75,7 @@ export default function ExchangeHome() {
                     <option value="TWD">Taiwan dollar (TWD)</option>
                     <option value="THB">Thai Baht (THB)</option>
                     <option value="VND">Vietnamese dong (VND)</option>
-                    <option value="CMD">Cumul Dollar (CMD)</option>
+                    <option value="CMD">Mayank Uchariya</option>
                 </select>
 
                 <select className="toCurrency" value={toCurrency} onChange={handleToCurrencyChange}>
