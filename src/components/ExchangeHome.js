@@ -56,7 +56,7 @@ export default function ExchangeHome() {
             <div className="formHomepage">
                 {/* <h3>Amount</h3> */}
                 <input className="amount" type="number" value={amount} onChange={handleAmountChange} />
-                <select className="fromCurrency" value={fromCurrency} onChange={handleFromCurrencyChange} style={{backgroundColor: 'black', color: 'white'}}>
+                <select className="fromCurrency" value={fromCurrency} onChange={handleFromCurrencyChange} style={color: 'white'}}>
                     <option value="INR">Indian Rupee (INR)</option>
                     <option value="JPY">Japanese Yen (JPY)</option>
                     <option value="RUB">Russian Ruble (RUB)</option>
